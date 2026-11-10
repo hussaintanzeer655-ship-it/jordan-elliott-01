@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Elliott - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">Jordan E.</div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+  <main id="content">
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Hi, I’m Jordan Elliott</h1>
+        <p>Frontend developer crafting accessible, pixel-perfect UI with delightful UX.</p>
+        <button class="cta" data-scroll-to="#projects">View work</button>
+      </div>
+    </section>
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>Designer by heart, engineer by training. I enjoy building fast, maintainable web apps that solve real problems.</p>
+    </section>
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <ul class="grid">
+        <li class="card">Responsive UI kit</li>
+        <li class="card">Analytics dashboard (mock)</li>
+        <li class="card">Accessible components</li>
+      </ul>
+    </section>
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <form id="contactForm" autocomplete="on" novalidate>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formStatus" aria-live="polite" class="status"></p>
+    </section>
+  </main>
+  <footer class="site-footer">© 2024 Jordan Elliott</footer>
+  <script src="script.js"></script>
+</body>
+</html>
